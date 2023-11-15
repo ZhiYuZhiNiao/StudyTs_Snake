@@ -1,0 +1,55 @@
+/* 
+  使 box-sizing 的设置具有继承特性
+*/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.game-container {
+  width: 380px;
+  margin: 15px auto;
+  height: 450px;
+  border: 10px solid #000;
+  border-radius: 15px;
+  padding: 15px;
+}
+.screen {
+  border: 1px solid #000;
+  height: 85%;
+  position: relative;
+}
+
+#food {
+  width: 10px;
+  height: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.sub-food {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background-color: #000;
+
+}
+
+#snake {
+
+}
+
+#snake div {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fff;
+  background-color: #000;
+  position: absolute;
+}
